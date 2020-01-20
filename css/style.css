@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+footer {
+    height: 40em;
+    background-color: #252525;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color .1s;
+}
+
+footer a:hover {
+    color: #009de6;
+    transition: color .1s;
+}
+
+sub {
+    font-size: 0.9em;
+}

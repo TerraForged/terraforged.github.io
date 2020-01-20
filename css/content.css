@@ -1,0 +1,47 @@
+.section {
+    padding: 0.5em 0;
+    min-height: 20em;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.section-text {
+    flex-grow: 1;
+    width: 60%;
+    padding: 1em;
+}
+
+.section-title {
+    width: 100%;
+    font-size: 1.5em;
+    padding: 0.25em;
+}
+
+.section-description {
+    width: 100%;
+    font-size: 1em;
+    padding: 0.25em;
+}
+
+.section-banner {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35em;
+    background: url("../image/mountains-1.jpg") no-repeat fixed top center;
+}
+
+.section-image {
+    flex-grow: 1;
+    width: 40%;
+    display: flex;
+}
+
+.section-image-title {}
+
+.section-image img {
+    width: 100%;
+    object-fit: cover;
+}
