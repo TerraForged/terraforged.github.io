@@ -1,17 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     handleImages();
-    handleBanners();
 });
-
-function handleBanners() {
-    setTimeout(function() {
-        let banner1 = document.querySelector(".banner");
-        banner1.classList.add("banner-hd");
-
-        let banner2 = document.querySelector(".section-banner");
-        banner2.classList.add("section-banner-hd");
-    }, 10);
-}
 
 function handleImages() {
     let lazyImages = [].slice.call(document.querySelectorAll("img"));
