@@ -1,8 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    handleImages();
-});
-
-function handleImages() {
+function handleLazyLoad() {
     let lazyImages = [].slice.call(document.querySelectorAll("img"));
     let active = false;
 
