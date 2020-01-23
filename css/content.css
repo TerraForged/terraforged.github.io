@@ -4,7 +4,7 @@
 }
 
 .section {
-    padding: 0.5em 0;
+    padding: 0.75em 0;
     min-height: 20em;
     display: flex;
     align-items: stretch;
@@ -21,7 +21,8 @@
     position: relative;
     flex-grow: 1;
     width: 60%;
-    padding: 1em;
+    padding: 0.5em 1em;
+    background-color: #fdfdfd;
 }
 
 .section-title {
@@ -44,6 +45,7 @@
     min-height: 35em;
     height: 100%;
     background: url("../image/mountains-2.jpg") no-repeat fixed top center;
+    background-size: cover;
 }
 
 .section-image {

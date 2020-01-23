@@ -17,13 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
                         lazyImages = lazyImages.filter(function(image) {
                             return image !== img;
                         });
-
-                        // add open action if marked as a link
-                        if (img.classList.contains("link")) {
-                            img.addEventListener("click", function() {
-                                window.open(img.src, "_blank");
-                            });
-                        }
                     }
 
                     if (lazyImages.length === 0) {
