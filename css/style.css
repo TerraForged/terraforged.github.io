@@ -6,7 +6,7 @@ body {
 }
 
 footer {
-    color: #444;
+    color: #666;
     font-size: 0.9em;
     height: 20em;
     background-color: #252525;
@@ -24,7 +24,7 @@ footer img {
 }
 
 footer a {
-    color: #444;
+    color: #666;
     text-decoration: none;
     transition: color .1s;
 }
