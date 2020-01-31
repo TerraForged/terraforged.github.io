@@ -38,14 +38,19 @@
 }
 
 .section-banner {
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 35em;
-    height: 100%;
+    flex-grow: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 35em !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background: url("../image/thumb/mountains-2.jpg") no-repeat fixed top center;
+    transition: background .05s;
+}
+
+.section-banner-hd {
     background: url("../image/mountains-2.jpg") no-repeat fixed top center;
-    background-size: cover;
 }
 
 .section-image {
