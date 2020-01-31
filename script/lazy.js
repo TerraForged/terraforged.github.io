@@ -1,23 +1,4 @@
 function handleLazyLoad() {
-    handleBannerLoad();
-    handleScrollLoad();
-}
-
-function handleBannerLoad() {
-    upgradeHd("banner", "banner-hd");
-    upgradeHd("splash", "section-banner-hd", 500);
-}
-
-function upgradeHd(id, className, timeout) {
-    if (timeout) {
-        window.setTimeout(() => upgradeHd(id, className), timeout);
-    } else {
-        let el = document.getElementById(id);
-        el.classList.add(className);
-    }
-}
-
-function handleScrollLoad() {
     let lazyImages = [].slice.call(document.querySelectorAll("img"));
     let active = false;
 
