@@ -34,6 +34,10 @@ footer a:hover {
     transition: color .1s;
 }
 
+.no-pad {
+    padding: 0 !important;
+}
+
 .link {
     color: #009de6;
 }
