@@ -1,6 +1,7 @@
 .content {
     max-width: 1600px;
     margin: auto;
+    background-color: #fff;
 }
 
 .section {
@@ -15,10 +16,14 @@
     font-size: 2em;
     padding: 1em 1.5em;
     text-align: center;
+    background-color: #fafafa;
 }
 
 .section-blurb {
-    padding: 0 3em;
+    padding: 1em 4em;
+    max-width: 900px;
+    margin: auto;
+    font-style: italic;
 }
 
 .section-text {
@@ -26,7 +31,6 @@
     flex-grow: 1;
     width: 60%;
     padding: 0.5em 1em;
-    background-color: #fdfdfd;
 }
 
 .section-title {
