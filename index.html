@@ -12,7 +12,9 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132658705-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
+        function gtag() {
+            dataLayer.push(arguments);
+        }
         gtag('js', new Date());
         gtag('config', 'UA-132658705-2');
     </script>
@@ -28,6 +30,26 @@
     </div>
 </div>
 <div class="content">
+    <div class="section-heading">Introduction</div>
+    <div class="section-blurb">
+        <p>
+            I've been work with Minecraft's terrain generation as a personal side-project for over 2 years, after
+            stumbling down the rabbit hole that is procedural generation... In that time I've learnt many things
+            & suffered many headaches!
+        </p>
+        <p>
+            My motivation has always been to generate Minecraft worlds I really felt like exploring
+            - I'm a keen hiker IRL so combining that with my interests in programming & Minecraft has been
+            a natural progression.
+        </p>
+        <p>
+            Happily, this all seems to have come together to a point where I think others might get some enjoyment
+            out of it too, so I gave it name: <b>TerraForged</b>.
+        </p>
+        <p>
+            <i>Author: <a class="link" href="https://github.com/dags-" target="_blank">dags</a></i>
+        </p>
+    </div>
     <div class="section-heading">Features & Goals</div>
     <div class="section">
         <div class="section-text">
@@ -35,11 +57,10 @@
                 Unique & Immersive Terrain
             </div>
             <div class="section-description">
-                TerraForged is a comlpete overhaul the Minecraft terrain generator in an attempt to create more
-                coherent worlds that look & feel expansive and interesting. Much of the terrain is based on real-life
-                landforms & processes but the goal is not to make your Minecraft world more "realistic", rather
-                "believable" or "immersive". The hope is that this encourages the explorers out there and equally
-                inspires the builders!
+                TerraForged's main goal is to create worlds that feel coherent, expansive and interesting. I don't
+                particularly like the label "realistic"; preferring "believable" or "immersive". That said, some
+                of the processes that go in to making the terrain are based (loosely) on real-life processes
+                - partly because I liked the results, partly because they were fun to recreate/approximate.
             </div>
         </div>
         <a class="section-image" href="image/sunset-1.jpg" target="_blank">
@@ -55,10 +76,14 @@
                 Mod Compatibility
             </div>
             <div class="section-description">
-                While TerraForged is a massive departure from Vanilla world gen, it is designed to adopt content
-                provided by other mods (such as their biomes & blocks) automatically without configuration
-                or additional compat mods. That said, deeper integrations are very much possible through
-                TerraForged's API.
+                <p>
+                    While TerraForged is a massive departure from Vanilla world gen, it has been designed largely to
+                    follow the same conventions that most biome & block providing mods adhere to and expect, so
+                    compatibility out of the box <i>should</i> be automatic with little to no configuration.
+                </p>
+                <p>
+                    Deeper integrations will also be possible through TerraForged's API (coming soon).
+                </p>
             </div>
             <div class="section-footer">
                 <i>
@@ -84,17 +109,17 @@
             </div>
             <div class="section-description">
                 <p>
-                    A major component to the visual style of TF's terrain is in it's use of hydraulic erosion.
+                    A major component to the visual style of TerraForged's terrain is in it's use of hydraulic erosion.
                     This process traces the paths of thousands of water droplets down the slope of the terrain,
-                    simulating material erosion & deposition, and creates subtle lines and variations in the heightmap
-                    that look great! Terraforged also uses this erosion data to decorate terrain with certain blocks
-                    - such as placing gravel (scree) at the bottom of steep slopes and removing snow from locations
-                    where it wouldn't realistically settle.
+                    simulating material erosion & deposition, and creates subtle lines and variations in the heightmap.
+                    Terraforged also uses this erosion data to decorate terrain with certain blocks such as placing
+                    gravel (scree) at the bottom of steep slopes and removing snow from locations where it wouldn't
+                    realistically settle.
                 </p>
                 <p>
-                    Also in TerraForged, rivers go somewhere! Rivers always end at an ocean, gradually become narrower
+                    Also, rivers go somewhere! Rivers always end at an ocean, gradually become narrower
                     towards their start, and can stretch for thousands of blocks. Some even fork into two, sometimes
-                    multiple times, and some you may find great lakes at their source.
+                    multiple times, and some you may find lakes at their source.
                 </p>
             </div>
         </div>
@@ -113,8 +138,8 @@
             <div class="section-description">
                 TerraForged integrates a flexible system for loading custom features into the world, replacing/modifying
                 existing ones, and controlling when/where they get placed. For example, TerraForged provides it's own
-                set of tree assets to replace the Vanilla ones. It modifies snow layer placement to create spectacular,
-                smooth, snow drifts.
+                set of tree assets to replace the Vanilla ones. It modifies snow layer placement to create smooth
+                snow drifts which look really cool.
             </div>
         </div>
     </div>
@@ -125,7 +150,7 @@
             </div>
             <div class="section-description">
                 Love sliders? TerraForged's got you covered! Control anything from how much ocean your world
-                has to the heights of your river banks! All this within an interactive GUI with a handy preview-map
+                has to how common your volcanoes are! All this within an interactive GUI with a handy preview-map
                 showing just how your settings will affect the resulting world.
             </div>
         </div>
@@ -159,8 +184,7 @@
     <div class="tiny">&copy; 2020 TerraForged</div>
     <div class="tiny">
         <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-            <path fill="#ffffff"
-                  d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            <path fill="#ffffff" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
         </svg>
         <div>
             <a href="https://github.com/TerraForged" target="_blank">View on Github</a>

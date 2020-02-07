@@ -17,6 +17,10 @@
     text-align: center;
 }
 
+.section-blurb {
+    padding: 0 3em;
+}
+
 .section-text {
     position: relative;
     flex-grow: 1;
