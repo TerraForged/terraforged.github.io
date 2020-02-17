@@ -54,21 +54,11 @@
         <div class="section-text no-pad">
             <div class="section-blurb">
                 <p>
-                    TerraForged is a new world generator mod for Minecraft (Java Edition) that takes a 'terrain first'
-                    approach to creating its worlds.
-                    It makes use of a range of noise algorithms and processing steps to generate vast and varying
-                    landscapes.
-                </p>
-                <p class="quote">
-                    This mod started life over two years ago as a side/passion-project born out of curiosity,
-                    and fuelled by the inspiring projects shared in the awesome <a class="link" target="_blank"
-                                                               href="https://reddit.com/r/proceduralgeneration">r/proceduralgeneration</a>
-                    community!
-                    While I continue to develop primarily for my own enjoyment & learning, I think the project
-                    has matured to a point where others may get some use out of it, so here it is!
-                </p>
-                <p class="quote sign-off">
-                    Author: <a class="link" target="_blank" href="https://github.com/dags-">dags</a>
+                    <i>
+                        TerraForged is a new world generator mod for Minecraft (Java Edition) that takes a 'terrain
+                        first' approach to creating the world. It started out as an experimental side project that, over
+                        the course of 2-3 years, has evolved (snow-balled) into what you see today!
+                    </i>
                 </p>
             </div>
         </div>
@@ -77,15 +67,20 @@
     <div class="section">
         <div class="section-text">
             <div class="section-title">
-                Unique & Immersive Terrain
+                Varied & Immersive Terrain
             </div>
             <div class="section-description">
                 <p>
                     TerraForged's aim is to make your Minecraft world look & feel more coherent, expansive and
                     interesting. It does this by combining a wide variety of hand-crafted terrain-type generators
                     (many of which are based on real-life landforms) and then procedurally blending, eroding and
-                    smoothing together. Unlike in Vanilla, the terrain is generated independently of the biome map,
-                    allowing for more variation and less abrupt transitions.
+                    smoothing together.
+                </p>
+                <p>
+                    Unlike Vanilla - which generates the biomes first, and lets the biomes define how the terrain is
+                    shaped - TerraForged generates the terrain first and <i>then</i> decorates it with biomes that suit.
+                    Not only does this produce smoother and more natural transitions between contrasting terrains,
+                    but means that biomes are no longer fixed to a single terrain type, allowing much more variation.
                 </p>
             </div>
         </div>
@@ -94,41 +89,9 @@
         </a>
     </div>
     <div class="section">
-        <a class="section-image" href="image/bop-1.jpg" target="_blank">
-            <img src="image/thumb/bop-1.jpg" data-src="image/bop-1.jpg" alt="TF & BP">
+        <a class="section-image" href="image/hills-1.jpg" target="_blank">
+            <img src="image/thumb/hills-1.jpg" data-src="image/hills-1.jpg" alt="Hills 1">
         </a>
-        <div class="section-text">
-            <div class="section-title">
-                Mod Compatibility
-            </div>
-            <div class="section-description">
-                <p>
-                    Whilst TerraForged is a massive departure from Vanilla world gen, it has been designed largely to
-                    follow the same conventions that most biome & block providing mods adhere to and expect, so
-                    compatibility out of the box <i>should</i> be automatic with little to no configuration.
-                </p>
-                <p>
-                    Deeper integrations will also be possible through TerraForged's API (coming soon).
-                </p>
-            </div>
-            <div class="section-footer">
-                <i>
-                    The example to the left here shows TerraForged working happily with the popular Biomes 'o Plenty
-                    Mod, out of the box!
-                </i>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="section-image">
-            <div id="splash" class="section-banner">
-                <div class="splash">
-                    <div class="splash-sub">Epic Mountain Ranges!</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section">
         <div class="section-text">
             <div class="section-title">
                 Erosion & Improved Rivers
@@ -143,15 +106,21 @@
                     realistically settle.
                 </p>
                 <p>
-                    Also, rivers go somewhere! Rivers always end at an ocean, gradually become narrower
-                    towards their start, and can stretch for thousands of blocks. Some even fork into two, sometimes
-                    multiple times, and some you may find lakes at their source.
+                    Rivers always end at an ocean, gradually become narrower towards their start, and can stretch for
+                    thousands of blocks. Some even fork into two, sometimes multiple times, and some you may find
+                    lakes at their source.
                 </p>
             </div>
         </div>
-        <a class="section-image" href="image/hills-1.jpg" target="_blank">
-            <img src="image/thumb/hills-1.jpg" data-src="image/hills-1.jpg" alt="Hills 1">
-        </a>
+    </div>
+    <div class="section">
+        <div class="section-image">
+            <div id="splash" class="section-banner">
+                <div class="splash">
+                    <div class="splash-sub">Epic Mountain Ranges!</div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="section">
         <a class="section-image" href="image/mountains-1.jpg" target="_blank">
@@ -162,10 +131,19 @@
                 Custom Features & Decoration
             </div>
             <div class="section-description">
-                TerraForged integrates a flexible system for loading custom features into the world, replacing/modifying
-                existing ones, and controlling when/where they get placed. For example, TerraForged provides it's own
-                set of tree assets to replace the Vanilla ones. It modifies snow layer placement to create smooth
-                snow drifts which look really cool.
+                <a>
+                    TerraForged integrates a flexible system for loading custom features into the world,
+                    replacing/modifying
+                    existing ones, and controlling when/where they get placed. For example, TerraForged provides it's
+                    own
+                    set of tree assets to replace the Vanilla ones. It modifies snow layer placement to create smooth
+                    snow drifts (which look really cool!).
+                </a>
+                <a>
+                    Chunks are decorated with randomly generated regions of strata (rock layers). This means you'll
+                    find more variety of materials whilst mining, and may also have to explore a bit more to find
+                    specific resources.
+                </a>
             </div>
         </div>
     </div>
@@ -176,13 +154,39 @@
             </div>
             <div class="section-description">
                 Love sliders? TerraForged's got you covered! Control anything from how much ocean your world
-                has to how common your volcanoes are! All this within an interactive GUI with a handy preview-map
+                has to how common volcanoes are! All this within an interactive GUI with a handy preview-map
                 showing just how your settings will affect the resulting world.
             </div>
         </div>
         <a class="section-image" href="image/settings-1.jpg" target="_blank">
             <img class="right" src="image/thumb/settings-1.jpg" data-src="image/settings-1.jpg" alt="Settings 1">
         </a>
+    </div>
+    <div class="section">
+        <a class="section-image" href="image/bop-1.jpg" target="_blank">
+            <img src="image/thumb/bop-1.jpg" data-src="image/bop-1.jpg" alt="TF & BP">
+        </a>
+        <div class="section-text">
+            <div class="section-title">
+                Mod Compatibility
+            </div>
+            <div class="section-description">
+                <p>
+                    Whilst TerraForged is a massive departure from Vanilla world gen, it has been designed largely to
+                    follow the same conventions that most biome & block providing mods adhere to and expect, so
+                    compatibility should require little to no configuration.
+                </p>
+                <p>
+                    Deeper integrations will also be possible through TerraForged's API (coming soon).
+                </p>
+            </div>
+            <div class="section-footer">
+                <i>
+                    The example to the left here shows TerraForged working happily with the popular Biomes 'o Plenty
+                    Mod out of the box!
+                </i>
+            </div>
+        </div>
     </div>
     <div class="section-heading">Example World</div>
     <div class="section section-vert">
