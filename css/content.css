@@ -52,7 +52,7 @@
     min-height: 35em !important;
     height: 100% !important;
     background-size: cover !important;
-    background: url("../image/mountains-2.jpg") no-repeat fixed top center;
+    background: url("../image/mountains-3.jpg") no-repeat fixed top center;
 }
 
 .section-image {
@@ -64,6 +64,7 @@
 .section-image img {
     width: 100%;
     object-fit: cover;
+    object-position: center;
 }
 
 .section-footer {

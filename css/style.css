@@ -48,3 +48,11 @@ footer a:hover {
     padding: 1em;
     font-size: 0.8em;
 }
+
+.fit-left {
+    object-position: left;
+}
+
+.fit-right {
+    object-position: right;
+}
