@@ -70,12 +70,42 @@
     flex-grow: 1;
     width: 40%;
     display: flex;
+    overflow: hidden;
 }
 
 .section-image img {
     width: 100%;
+    overflow: hidden;
     object-fit: cover;
     object-position: center;
+    transition: filter .1s, transform .2s;
+}
+
+.section-image img:hover {
+    filter: brightness(105%);
+    transform: scale(1.025);
+    transition: filter .1s, transform .2s;
+}
+
+.gallery .section-image {
+    transition: width .2s;
+    margin: 0.1em;
+}
+
+.gallery .section-image:hover {
+    flex-grow: 2;
+    width: 100%;
+    transition: width .2s;
+}
+
+.gallery .section-image img {
+    transition: filter .1s, transform .1s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    filter: brightness(110%);
+    transition: filter .1s, transform .1s;
 }
 
 .section-footer {
