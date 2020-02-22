@@ -24,8 +24,16 @@
 }
 
 .section-blurb {
-    padding: 1em 4em;
-    max-width: 900px;
+    padding: 1.5em 0.5em;
+    max-width: 800px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.section-video {
+    display: block;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -121,6 +129,9 @@
 
 .section-vert {
     flex-direction: column;
+}
+
+.section-justify {
     align-items: center;
     justify-content: center;
 }
