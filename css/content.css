@@ -114,8 +114,15 @@
     font-size: 0.75em;
 }
 
+.section-row {
+    display: flex;
+    justify-content: center;
+}
+
 .section-vert {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-map {
@@ -133,25 +140,46 @@
     border: none;
 }
 
-.section-map-button {
+.section-button {
     display: flex;
     margin: 1em auto;
     align-items: center;
     justify-content: center;
     color: #fdfdfd;
-    width: 15em;
-    height: 5em;
+    width: 9em;
+    height: 3.5em;
+    font-size: 1.25em;
     text-decoration: none;
     background-color: #3e95d2;
     box-shadow: 0 0 0.1em 0 rgba(0, 0, 0, 0.5);
 }
 
-.section-map-button:hover {
+.section-button:hover {
     background-color: #42a0e1;
 }
 
-.section-map-button:active {
+.section-button:active {
     box-shadow: 0 0 0.2em 0 rgba(0, 0, 0, 0.8);
+}
+
+.primary {
+    background-color: #3e95d2;
+}
+
+.primary:hover {
+    background-color: #3e95d2;
+}
+
+.secondary {
+    background-color: #aaa;
+}
+
+.secondary:hover {
+    background-color: #999;
+}
+
+.margin {
+    margin: 0.5em;
 }
 
 .quote {

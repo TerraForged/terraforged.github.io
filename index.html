@@ -29,11 +29,9 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132658705-2"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
         function gtag() {
             dataLayer.push(arguments);
         }
-
         gtag('js', new Date());
         gtag('config', 'UA-132658705-2');
     </script>
@@ -49,8 +47,8 @@
     </div>
 </div>
 <div class="content">
-    <div class="section-heading">Introduction</div>
-    <div class="section no-pad">
+    <div id="about" class="section-heading">About</div>
+    <div class="section section-vert no-pad">
         <div class="section-text no-pad">
             <div class="section-blurb">
                 <p>
@@ -61,8 +59,16 @@
                 </p>
             </div>
         </div>
+        <div class="section-row">
+            <a class="section-button margin secondary" href="https://github.com/TerraForged/TerraForged/issues" target="_blank">
+                Issues
+            </a>
+            <a class="section-button margin" href="https://www.curseforge.com/minecraft/mc-mods/terraforged/" target="_blank">
+                Downloads
+            </a>
+        </div>
     </div>
-    <div class="section-heading">Features & Goals</div>
+    <div id="features" class="section-heading">Features & Goals</div>
     <div class="section">
         <div class="section-text">
             <div class="section-title">
@@ -199,16 +205,16 @@
         </a>
         <div class="section-text">
             <div class="section-title">
-                Highly Configurable
+                Extensive Configuration Options
             </div>
             <div class="section-description">
                 Love sliders? TerraForged's got you covered! Control anything from how much ocean your world
                 has to how common volcanoes are! All this within an interactive GUI with a handy preview-map
-                showing just how your settings will affect the resulting world.
+                showing just how your settings will affect the world.
             </div>
         </div>
     </div>
-    <div class="section-heading">Gallery</div>
+    <div id="gallery" class="section-heading">Gallery</div>
     <div class="section gallery">
         <a class="section-image" href="image/flowers-1.jpg" target="_blank">
             <img class="fit-left" src="image/thumb/flowers-1.jpg" data-src="image/flowers-1.jpg" alt="Settings 1">
@@ -226,7 +232,7 @@
             <img class="fit-right" src="image/thumb/mountains-2.jpg" data-src="image/mountains-2.jpg" alt="Settings 1">
         </a>
     </div>
-    <div class="section-heading">Example World</div>
+    <div id="demo" class="section-heading">Example World</div>
     <div class="section section-vert">
         <div class="section-text">
             This 4.5k world was generated with TerraForged-alpha on it's default settings.
@@ -234,8 +240,8 @@
         <div class="section-map">
             <iframe src="https://terraforged.com/demo/"></iframe>
         </div>
-        <a class="section-map-button" href="https://terraforged.com/demo/" target="_blank">
-            Open In New Tab
+        <a class="section-button" href="https://terraforged.com/demo/" target="_blank">
+            Open Map
         </a>
     </div>
 </div>
