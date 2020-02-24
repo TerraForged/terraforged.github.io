@@ -25,15 +25,14 @@
 
 .section-blurb {
     padding: 1.5em 0.5em;
-    max-width: 800px;
     margin: auto;
+    width: 75%;
     box-sizing: border-box;
 }
 
 .section-video {
     display: block;
     width: 100%;
-    max-width: 800px;
     margin: auto;
 }
 
