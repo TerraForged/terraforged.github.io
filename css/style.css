@@ -49,6 +49,10 @@ footer a:hover {
     font-size: 0.8em;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .fit-left {
     object-position: left;
 }
