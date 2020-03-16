@@ -162,35 +162,22 @@
     text-decoration: none;
     background-color: #3e95d2;
     box-shadow: 0 0 0.1em 0 rgba(0, 0, 0, 0.5);
+    transition: box-shadow .025s, filter .025s;
 }
 
 .section-button:hover {
-    background-color: #42a0e1;
+    filter: brightness(1.05);
+    box-shadow: 0 0 0.2em 0 rgba(0, 0, 0, 0.65);
 }
 
 .section-button:active {
+    filter: brightness(1.2);
     box-shadow: 0 0 0.2em 0 rgba(0, 0, 0, 0.8);
 }
 
 .button-container {
     padding-top: 3em;
     padding-bottom: 1em;
-}
-
-.primary {
-    background-color: #3e95d2;
-}
-
-.primary:hover {
-    background-color: #3e95d2;
-}
-
-.secondary {
-    background-color: #aaa;
-}
-
-.secondary:hover {
-    background-color: #999;
 }
 
 .margin {
