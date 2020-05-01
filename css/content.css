@@ -79,6 +79,10 @@
     overflow: hidden;
 }
 
+.gallery .section-image {
+    display: flex;
+}
+
 .section-image img {
     width: 100%;
     overflow: hidden;
