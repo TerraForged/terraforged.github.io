@@ -76,7 +76,6 @@
 .section-image {
     flex-grow: 1;
     width: 40%;
-    display: flex;
     overflow: hidden;
 }
 
