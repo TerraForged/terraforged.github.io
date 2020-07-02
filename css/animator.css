@@ -1,0 +1,62 @@
+.scroll-down-animator {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    margin-left: -2.5em;
+    width: 5em;
+    height: 5em;
+    overflow: hidden;
+    border-radius: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.scroll-down-animator:hover {
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+@keyframes animator {
+    0% {
+        transform: rotate(45deg) translate(-1em, -1em);
+        opacity: 0;
+    }
+    50% {
+        transform: rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(45deg) translate(1em, 1em);
+        opacity: 0;
+    }
+}
+
+.scroll-down-animator::before {
+    content: "";
+    width: 2em;
+    height: 2em;
+    border: 0.33em solid white;
+    display: block;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+    animation: animator 2s ease infinite forwards;
+    position: absolute;
+    top: 1em;
+}
+
+.scroll-down-animator::after {
+    content: "";
+    width: 2em;
+    height: 2em;
+    border: 0.33em solid white;
+    display: block;
+    border-left: none;
+    border-top: none;
+    transform: rotate(45deg);
+    animation: animator 2s ease infinite forwards .33s;
+    position: absolute;
+    top: -0.3em;
+}

@@ -1,267 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Primary Meta Tags -->
-    <title>TerraForged</title>
+    <title>TerraForged World Generation</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scaleable=no">
     <meta name="title" content="TerraForged">
-    <meta name="description"
-          content="TerraForged is an ambitious new terrain generator mod for Minecraft (Java Edition) attempting to create more immersive, inspiring worlds to explore and build in!">
+    <meta name="keywords" content="minecraft, terraforged, mod, java edition, worldgen, world, generation, generator">
+    <meta name="description" content="TerraForged is an ambitious new terrain generator mod for Minecraft (Java Edition) attempting to create more immersive, inspiring worlds to explore and build in!">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://terraforged.com">
     <meta property="og:title" content="TerraForged">
-    <meta property="og:description"
-          content="TerraForged is an ambitious new terrain generator mod for Minecraft (Java Edition) attempting to create more immersive, inspiring worlds to explore and build in!">
+    <meta property="og:description" content="TerraForged is an ambitious new terrain generator mod for Minecraft (Java Edition) attempting to create more immersive, inspiring worlds to explore and build in!">
     <meta property="og:image" content="https://terraforged.com/icon/social.jpg">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://terraforged.com">
     <meta property="twitter:title" content="TerraForged">
-    <meta property="twitter:description"
-          content="TerraForged is an ambitious new terrain generator mod for Minecraft (Java Edition) attempting to create more immersive, inspiring worlds to explore and build in!">
+    <meta property="twitter:description" content="TerraForged is an ambitious new terrain generator mod for Minecraft (Java Edition) attempting to create more immersive, inspiring worlds to explore and build in!">
     <meta property="twitter:image" content="https://terraforged.com/icon/social.jpg">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/banner.css">
-    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/animator.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="shortcut  icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
     <!-- Scripts -->
     <script async src="script/lazy.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132658705-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-        gtag('config', 'UA-132658705-2');
-    </script>
 </head>
-<body onload="handleLazyLoad()">
-<div class="banner-container">
-    <div id="banner" class="banner">
-        <div class="splash">
-            <div class="logo"></div>
-            <div class="splash-title">TerraForged</div>
-            <div class="splash-sub italic">Hello, world!</div>
-        </div>
-    </div>
-</div>
-<div class="content">
-    <div id="about" class="section-heading">About</div>
-    <div class="section section-vert section-justify no-pad">
-        <div class="section-blurb">
-            <p>
-                <i>
-                    TerraForged is an ambitious new terrain generator mod for Minecraft (Java Edition) attempting
-                    to create more immersive, inspiring worlds to explore and build in. Featuring an overhaul of
-                    the vanilla generation system, custom terrain shapes, simulated erosion, better rivers, custom
-                    decorations, tonnes of configuration options, and more!
-                </i>
-            </p>
-            <video class="section-video" poster="video/flyby.png" controls controlslist="nodownload"
-                   disablePictureInPicture>
-                <source src="video/flyby.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="section-row button-container">
-            <a class="section-button margin"
-               href="https://github.com/TerraForged/TerraForged"
-               style="background-color: #333"
-               title="Go to github.com"
-               target="_blank">
-                Github
-            </a>
-            <a class="section-button margin"
-               href="https://discord.gg/KwNtH5N"
-               style="background-color: #7289da"
-               title="Join the project's Discord server"
-               target="_blank">
-                Discord
-            </a>
-            <a class="section-button margin"
-               href="https://www.patreon.com/dagsme"
-               style="background-color: #e85b46"
-               title="Back the project on Patreon"
-               target="_blank">
-                Patreon
-            </a>
-            <a class="section-button margin"
-               href="https://www.curseforge.com/minecraft/mc-mods/terraforged"
-               title="Go to curseforge.com"
-               target="_blank">
-                Downloads
-            </a>
-        </div>
-        <div class="section-blurb">
-            <!-- Padding -->
-        </div>
-    </div>
-    <div id="features" class="section-heading">Features & Goals</div>
-    <div class="section">
-        <div class="section-text">
-            <div class="section-title">
-                Better Looking Terrain
-            </div>
-            <div class="section-description">
-                <p>
-                    TerraForged's aim is to make your Minecraft world look & feel more coherent, expansive and
-                    interesting. It does this by combining a wide variety of hand-crafted terrain-type generators
-                    (many of which are inspired by real-life landforms) and then procedurally blending, eroding and
-                    smoothing together.
-                </p>
-                <p>
-                    Unlike Vanilla - which generates the biomes first, and lets the biomes define how the terrain is
-                    shaped - TerraForged generates the terrain first and <i>then</i> decorates it with biomes that suit.
-                    Not only does this produce smoother and more natural transitions between contrasting terrains,
-                    but means that biomes are no longer fixed to a single terrain type, allowing for much more
-                    variation.
-                </p>
-            </div>
-        </div>
-        <a class="section-image" href="image/sunset-1.jpg" target="_blank">
-            <img src="image/thumb/sunset-1.jpg" data-src="image/sunset-1.jpg" alt="Sunset 1">
-        </a>
-    </div>
-    <div class="section">
-        <a class="section-image" href="image/savanna-1.jpg" target="_blank">
-            <img src="image/thumb/savanna-1.jpg" data-src="image/savanna-1.jpg" alt="Mountains 1">
-        </a>
-        <div class="section-text">
-            <div class="section-title">
-                Custom Features & Decoration
-            </div>
-            <div class="section-description">
-                <a>
-                    TerraForged integrates a flexible system for loading custom features into the world,
-                    replacing/modifying
-                    existing ones, and controlling when/where they get placed. For example, TerraForged provides it's
-                    own
-                    set of tree assets to replace the Vanilla ones. It modifies snow layer placement to create smooth
-                    snow drifts (which look really cool!).
-                </a>
-                <a>
-                    Chunks are decorated with randomly generated regions of strata (rock layers). This means you'll
-                    find more variety of materials whilst mining, and may also have to explore a bit more to find
-                    specific resources.
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="section-image">
-            <div id="splash" class="section-banner section-banner-1">
-                <div class="splash">
-                    <div class="splash-sub">Epic Mountain Ranges!</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="section-text">
-            <div class="section-title">
-                Simulated Erosion
-            </div>
-            <div class="section-description">
-                <p>
-                    TerraForged makes use of an hydraulic-erosion algorithm to help improve the visual style of its
-                    terrain.
-                    This process traces the paths of thousands of water droplets down the slope of the terrain,
-                    simulating
-                    material erosion, carry, & deposition, and creates subtle lines and variations in the heightmap.
-                </p>
-                <p>
-                    Data from this process is also used when decorating the terrain to expose the rock-face on highly
-                    eroded inclines, place gravel (scree) at the bottom of slopes, and to remove snow from locations
-                    where it wouldn't naturally settle.
-                </p>
-            </div>
-        </div>
-        <a class="section-image" href="image/hills-1.jpg" target="_blank">
-            <img src="image/thumb/hills-1.jpg" data-src="image/hills-1.jpg" alt="Hills 1">
-        </a>
-    </div>
-    <div class="section">
-        <a class="section-image" href="image/river-1.jpg" target="_blank">
-            <img src="image/thumb/river-1.jpg" data-src="image/river-1.jpg" alt="Hills 1">
-        </a>
-        <div class="section-text">
-            <div class="section-title">
-                Rivers That Go Somewhere
-            </div>
-            <div class="section-description">
-                Rivers will always lead you to the ocean, gradually increasing in width from start to finish. They
-                can stretch for (literally) thousands of blocks carving the terrain & forming valleys as they go.
-                You'll also find forks where two rivers meet, and the occasional lake on the way.
-            </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="section-image">
-            <div id="splash" class="section-banner section-banner-2">
-                <div class="splash">
 
+<body>
+    <div class="main">
+        <section class="fullsize" id="intro">
+            <!-- <img class="section-bg" src="/image/village-1.jpg" /> -->
+            <video class="bg-video" autoplay="true" loop="true" controlslist="nodownload" disablePictureInPicture>
+                <source src="/video/TerraForgedBG.mp4" />
+            </video>
+            <div class="splash">
+                <img src="/icon/terraforged.png" />
+                <h1>TerraForged</h1>
+                <h3>Hello, World!</h3>
+            </div>
+            <a href="#about">
+                <div class="scroll-down-animator"></div>
+            </a>
+        </section>
+        <header class="sticky-header-menu">
+            <img src="/icon/terraforged.png" />
+            <a href="#intro">Intro</a>
+            <a href="#about">About</a>
+            <a href="#features">Features & Goals</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#exampleworld">Example World</a>
+        </header>
+        <section id="about">
+            <h2>About Terraforged</h2>
+            <p class="section-row">
+                <b>TerraForged</b> is an ambitious new terrain generator mod for <a href="https://www.minecraft.net/" alt="Minecraft" target="blanc">Minecraft (Java Edition)</a> attempting to create more <b>immersive,
+                    inspiring worlds</b> to explore and build in. Featuring an overhaul of the vanilla generation system, custom terrain shapes, simulated erosion, better rivers, custom decorations, <b>tonnes of configuration options</b>, and more!
+            </p>
+            <div class="section-row">
+                <video class="section-video" poster="video/flyby.png" controls controlslist="nodownload" disablePictureInPicture>
+                    <source src="video/flyby.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p class="section-row">
+                Find out more! Contribution and feedback welcome!
+            </p>
+            <div class="section-row button-container">
+                <a class="section-button margin" href="https://github.com/TerraForged/TerraForged" style="background-color: #333" title="Go to github.com" target="_blank">
+                    Github
+                </a>
+                <a class="section-button margin" href="https://discord.gg/KwNtH5N" style="background-color: #7289da" title="Join the project's Discord server" target="_blank">
+                    Discord
+                </a>
+                <a class="section-button margin" href="https://www.patreon.com/dagsme" style="background-color: #e85b46" title="Back the project on Patreon" target="_blank">
+                    Patreon
+                </a>
+                <a class="section-button margin" href="https://www.curseforge.com/minecraft/mc-mods/terraforged" title="Go to curseforge.com" target="_blank">
+                    Downloads
+                </a>
+            </div>
+        </section>
+        <section id="features">
+            <h2>Features and Goals</h2>
+            <div class="sticky-header-menu">
+                <a href="#features.terrain">Terrain</a>
+                <a href="#features.decoration">Decoration</a>
+                <a href="#features.erosion">Erosion</a>
+                <a href="#features.rivers">Rivers</a>
+                <a href="#features.configuration">Configuration</a>
+            </div>
+            <div class="section-row" id="features.terrain">
+                <h4>Better Looking Terrain</h4>
+                <div class="split">
+                    <p>
+                        TerraForged's aim is to make your Minecraft world look & feel <b>more coherent, expansive and
+                            interesting</b>. It does this by combining a wide variety of hand-crafted terrain-type generators (many of which are inspired by real-life landforms) and then procedurally blending, eroding and smoothing together. <br /><br
+                        />Unlike Vanilla - which generates the biomes first, and lets the biomes define how the terrain is shaped - <b>TerraForged generates the terrain first</b> and then decorates it with biomes that suit. Not only does this produce
+                        smoother and more natural transitions between contrasting terrains, but means that biomes are no longer fixed to a single terrain type, allowing for much more variation.
+                    </p>
+                    <a class="section-image" href="image/sunset-1.jpg" target="_blank">
+                        <img src="image/thumb/sunset-1.jpg" data-src="image/sunset-1.jpg" alt="Sunset 1">
+                    </a>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="section">
-        <div class="section-text">
-            <div class="section-title">
-                Extensive Configuration Options
+            <div class="section-row" id="features.decoration">
+                <h4>Custom Features & Decoration</h4>
+                <div class="split">
+                    <a class="section-image" href="image/savanna-1.jpg" target="_blank">
+                        <img src="image/thumb/savanna-1.jpg" data-src="image/savanna-1.jpg" alt="Mountains 1">
+                    </a>
+                    <p>TerraForged integrates a flexible system for loading <b>custom features</b> into the world, replacing/modifying existing ones, and controlling when/where they get placed. For example, TerraForged provides it's own set of tree assets
+                        to replace the Vanilla ones. It modifies snow layer placement to create smooth snow drifts (which look really cool!). <br /><br />Chunks are decorated with randomly generated regions of strata (rock layers). This means you'll find
+                        <b>more variety of materials</b> whilst mining, and may also have to explore a bit more to find specific resources.</p>
+                </div>
             </div>
-            <div class="section-description">
-                Love sliders? TerraForged's got you covered! Control anything from how much ocean your world
-                has to how common volcanoes are! All this within an interactive GUI with a handy preview-map
-                showing just how your settings will affect the world.
+            <div class="section-row" id="features.erosion">
+                <h4>Simulated Erosion</h4>
+                <div class="split">
+                    <p>
+                        TerraForged makes use of an hydraulic-erosion algorithm to help improve the visual style of its terrain. This process traces the paths of thousands of water droplets down the slope of the terrain, <b>simulating material erosion</b>,
+                        carry, & deposition, and creates subtle lines and variations in the heightmap. <br /><br />Data from this process is also used when decorating the terrain to expose the rock-face on highly eroded inclines, place gravel (scree)
+                        at the bottom of slopes, and to remove snow from locations where it wouldn't naturally settle.
+                    </p>
+                    <a class="section-image" href="image/hills-1.jpg" target="_blank">
+                        <img src="image/thumb/hills-1.jpg" data-src="image/hills-1.jpg" alt="Hills 1">
+                    </a>
+                </div>
             </div>
-        </div>
-        <a class="section-image" href="image/settings-1.jpg" target="_blank">
-            <img class="right" src="image/thumb/settings-1.jpg" data-src="image/settings-1.jpg" alt="Settings 1">
-        </a>
+            <div class="section-row" id="features.rivers">
+                <h4>Rivers That Go Somewhere</h4>
+                <div class="split">
+                    <a class="section-image" href="image/river-1.jpg" target="_blank">
+                        <img src="image/thumb/river-1.jpg" data-src="image/river-1.jpg" alt="River 1">
+                    </a>
+                    <p>TerraForged integrates a <b>flexible system for loading custom features</b> into the world, replacing/modifying existing ones, and controlling when/where they get placed. <br /><br />For example, TerraForged provides <b>it's own set of tree assets</b>                        to replace the Vanilla ones. It modifies <b>snow layer placement</b> to create smooth snow drifts (which look really cool!).
+                        <br /><br />Chunks are decorated with randomly generated regions of strata (rock layers). This means you'll find more variety of materials whilst mining, and may also have to explore a bit more to find specific resources.</p>
+                </div>
+            </div>
+            <div class="section-row" id="features.configuration">
+                <h4>Extensive Configuration Options</h4>
+                <div class="split">
+                    <p>
+                        Love sliders? TerraForged's got you covered! Control anything from how much ocean your world has to how common volcanoes are! All this within an interactive GUI with a handy preview-map showing just how your settings will affect the world.
+                    </p>
+                    <img class="right" src="image/thumb/settings-1.jpg" data-src="image/settings-1.jpg" alt="Settings 1">
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="section-row gallery">
+                <a class="section-image" href="image/flowers-1.jpg" target="_blank">
+                    <img class="fit-left" src="image/thumb/flowers-1.jpg" data-src="image/flowers-1.jpg" alt="Settings 1">
+                </a>
+                <a class="section-image" href="image/taiga-1.jpg" target="_blank">
+                    <img class="fit-right" src="image/thumb/taiga-1.jpg" data-src="image/taiga-1.jpg" alt="Settings 1">
+                </a>
+                <a class="section-image" href="image/mountains-3.jpg" target="_blank">
+                    <img class="fit-left" src="image/thumb/mountains-3.jpg" data-src="image/mountains-3.jpg" alt="Settings 1">
+                </a>
+                <a class="section-image" href="image/bop-2.jpg" target="_blank">
+                    <img class="fit-left" src="image/thumb/bop-2.jpg" data-src="image/bop-2.jpg" alt="Settings 1">
+                </a>
+                <a class="section-image" href="image/mountains-2.jpg" target="_blank">
+                    <img class="fit-right" src="image/thumb/mountains-2.jpg" data-src="image/mountains-2.jpg" alt="Settings 1">
+                </a>
+            </div>
+        </section>
+        <section id="exampleworld">
+            <h2>Example World</h2>
+            <div class="section-row">
+                <iframe src="https://terraforged.com/demo/"></iframe>
+            </div>
+            <div class="section-row center">
+                <a class="section-button" href="https://terraforged.com/demo/" target="_blank">
+                    Open Map
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <a href="https://terraforged.com">
+                    <img src="icon/terraforged.png" alt="TerraForged Logo">
+                </a>
+            </div>
+            <small>&copy; 2020 TerraForged (by dags)</small>
+        </footer>
     </div>
-    <div id="gallery" class="section-heading">Gallery</div>
-    <div class="section gallery">
-        <a class="section-image" href="image/flowers-1.jpg" target="_blank">
-            <img class="fit-left" src="image/thumb/flowers-1.jpg" data-src="image/flowers-1.jpg" alt="Settings 1">
-        </a>
-        <a class="section-image" href="image/taiga-1.jpg" target="_blank">
-            <img class="fit-right" src="image/thumb/taiga-1.jpg" data-src="image/taiga-1.jpg" alt="Settings 1">
-        </a>
-        <a class="section-image" href="image/mountains-3.jpg" target="_blank">
-            <img class="fit-left" src="image/thumb/mountains-3.jpg" data-src="image/mountains-3.jpg" alt="Settings 1">
-        </a>
-        <a class="section-image" href="image/bop-2.jpg" target="_blank">
-            <img class="fit-left" src="image/thumb/bop-2.jpg" data-src="image/bop-2.jpg" alt="Settings 1">
-        </a>
-        <a class="section-image" href="image/mountains-2.jpg" target="_blank">
-            <img class="fit-right" src="image/thumb/mountains-2.jpg" data-src="image/mountains-2.jpg" alt="Settings 1">
-        </a>
-    </div>
-    <div id="demo" class="section-heading">Example World</div>
-    <div class="section section-vert">
-        <div class="section-text">
-            This 4.5k world was generated with TerraForged-alpha on it's default settings.
-        </div>
-        <div class="section-map">
-            <iframe src="https://terraforged.com/demo/"></iframe>
-        </div>
-        <a class="section-button" href="https://terraforged.com/demo/" target="_blank">
-            Open Map
-        </a>
-    </div>
-</div>
-<footer>
-    <div>
-        <a href="https://terraforged.com">
-            <img src="icon/terraforged.png" alt="TerraForged Logo">
-        </a>
-    </div>
-    <div class="tiny">&copy; 2020 TerraForged (by dags)</div>
-</footer>
 </body>
+
 </html>
