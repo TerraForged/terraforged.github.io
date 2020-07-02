@@ -32,9 +32,19 @@
     <!-- Scripts -->
     <script async src="script/lazy.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132658705-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-132658705-2');
+    </script>
 </head>
 
-<body>
+<body onload="handleLazyLoad()">
     <div class="main">
         <section class="fullsize" id="intro">
             <!-- <img class="section-bg" src="/image/village-1.jpg" /> -->
