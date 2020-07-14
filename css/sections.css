@@ -119,8 +119,6 @@ section p {
 
 .section-row {
     padding: 2rem 3rem;
-    scroll-margin-top: 10rem;
-    scroll-snap-align: start;
 }
 
 @media screen and (orientation: portrait) {

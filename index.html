@@ -48,8 +48,11 @@
     <div class="main">
         <section class="fullsize" id="intro">
             <!-- <img class="section-bg" src="/image/village-1.jpg" /> -->
-            <video class="bg-video" autoplay="true" loop="true" controlslist="nodownload" disablePictureInPicture>
-                <source src="/video/TerraForgedBG.mp4" />
+            <video class="bg-video" autoplay="true" loop="true" controlslist="nodownload" disablePictureInPicture poster="video/terraforgedbg.jpg">
+                <source src="/video/TerraForgedBG.mp4" type="video/mp4" />
+                <source src="/video/TerraForgedBG.mov" type="video/mov" />
+                <source src="/video/TerraForgedBG.Ogg" type="video/ogg" />
+                <img src="video/terraforgedbg.jpg" />
             </video>
             <div class="splash">
                 <img src="/icon/terraforged.png" />
@@ -62,17 +65,28 @@
         </section>
         <header class="sticky-header-menu">
             <img src="/icon/terraforged.png" />
-            <a href="#intro">Intro</a>
-            <a href="#about">About</a>
-            <a href="#features">Features & Goals</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#exampleworld">Example World</a>
+            <label class="mobile-menu">
+                <input type="checkbox" />
+                <div class="items">
+                    <a href="#intro">Intro</a>
+                    <a href="#about">About</a>
+                    <a href="#features">Features & Goals</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#exampleworld">Example World</a>
+                </div>
+                <svg viewBox="0 0 100 90" width="40" height="40" fill="white">
+                    <rect y="0" width="100" height="16" rx="10"></rect>
+                    <rect y="37" width="100" height="16" rx="10"></rect>
+                    <rect y="74" width="100" height="16" rx="10"></rect>
+                </svg>
+            </label>
         </header>
         <section id="about">
             <h2>About Terraforged</h2>
             <p class="section-row">
                 <b>TerraForged</b> is an ambitious new terrain generator mod for <a href="https://www.minecraft.net/" alt="Minecraft" target="blanc">Minecraft (Java Edition)</a> attempting to create more <b>immersive,
-                    inspiring worlds</b> to explore and build in. Featuring an overhaul of the vanilla generation system, custom terrain shapes, simulated erosion, better rivers, custom decorations, <b>tonnes of configuration options</b>, and more!
+                    inspiring worlds</b> to explore and build in. Featuring an overhaul of the vanilla generation system, custom terrain shapes, simulated erosion, better rivers, custom decorations, <b>tonnes of
+                    configuration options</b>, and more!
             </p>
             <div class="section-row">
                 <video class="section-video" poster="video/flyby.png" controls controlslist="nodownload" disablePictureInPicture>
@@ -112,8 +126,9 @@
                     <p>
                         TerraForged's aim is to make your Minecraft world look & feel <b>more coherent, expansive and
                             interesting</b>. It does this by combining a wide variety of hand-crafted terrain-type generators (many of which are inspired by real-life landforms) and then procedurally blending, eroding and smoothing together. <br /><br
-                        />Unlike Vanilla - which generates the biomes first, and lets the biomes define how the terrain is shaped - <b>TerraForged generates the terrain first</b> and then decorates it with biomes that suit. Not only does this produce
-                        smoother and more natural transitions between contrasting terrains, but means that biomes are no longer fixed to a single terrain type, allowing for much more variation.
+                        />Unlike Vanilla - which generates the biomes first, and lets the biomes define how the terrain is shaped - <b>TerraForged generates the terrain
+                            first</b> and then decorates it with biomes that suit. Not only does this produce smoother and more natural transitions between contrasting terrains, but means that biomes are no longer fixed to a single terrain type, allowing
+                        for much more variation.
                     </p>
                     <a class="section-image" href="image/sunset-1.jpg" target="_blank">
                         <img src="image/thumb/sunset-1.jpg" data-src="image/sunset-1.jpg" alt="Sunset 1">
